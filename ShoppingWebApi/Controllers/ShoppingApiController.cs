@@ -17,9 +17,9 @@ namespace ShoppingWebApi.Controllers
             _db = new DbHelper(eF_DataContext);
         }
 
-        // GET: api/ShoppingApi
+        // GET: /ShoppingApi
         [HttpGet]
-        [Route("api/[controller]/GetProducts")]
+        [Route("/[controller]/GetProducts")]
         public IActionResult Get()
         {
             ResponseType type = ResponseType.Success;
@@ -39,12 +39,9 @@ namespace ShoppingWebApi.Controllers
             }
         }
 
-
-
-
-        // GET: api/ShoppingApi/5
+        // GET: /ShoppingApi/5
         [HttpGet ]
-        [Route("api/[controller]/GetProductById/{id}")]
+        [Route("/[controller]/GetProductById/{id}")]
 
         public IActionResult Get(int id)
         {
@@ -65,9 +62,9 @@ namespace ShoppingWebApi.Controllers
             }
         }
 
-        // POST: api/ShoppingApi
+        // POST: /ShoppingApi
         [HttpPost]
-        [Route("api/[controller]/SaveOrder")]
+        [Route("/[controller]/SaveOrder")]
 
         public IActionResult Post([FromBody] OrderModel model)
         {
@@ -84,9 +81,9 @@ namespace ShoppingWebApi.Controllers
             }
         }
 
-        // PUT: api/ShoppingApi/5
+        // PUT: /ShoppingApi/5
         [HttpPut]
-        [Route("api/[controller]/UpdateOrder")]
+        [Route("/[controller]/UpdateOrder")]
 
         public IActionResult Put([FromBody] OrderModel model)
         {
@@ -104,9 +101,9 @@ namespace ShoppingWebApi.Controllers
             }
         }
 
-        // DELETE: api/ShoppingApi/5
+        // DELETE: /ShoppingApi/5
         [HttpDelete]
-        [Route("api/[controller]/DeleteOrder/{id}")]
+        [Route("/[controller]/DeleteOrder/{id}")]
 
         public IActionResult Delete(int id)
         {
@@ -122,5 +119,6 @@ namespace ShoppingWebApi.Controllers
 
             }
         }
+        
     }
 }
