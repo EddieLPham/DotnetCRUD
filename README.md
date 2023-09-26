@@ -1,15 +1,15 @@
 # Projects
 A CRUD shopping api built with ASP.Net and PostgreSQL, and it is tested using Postman.
 
-##GET (Products)
+## GET (Products)
 ![alt text](./PictureOfProject/GetProducts.png)
-##GET (by ID )
+## GET (by ID )
 ![alt text](./PictureOfProject/GetProductById.png)
-##POST (Save Order)
+## POST (Save Order)
 ![alt text](./PictureOfProject/SaveOrder.png)
-##DELETE
+## DELETE
 ![alt text](./PictureOfProject/DeleteOrder.png)
-##SQL Order
+## SQL Order
 ![alt text](./PictureOfProject/OrderSQL.png)
-##SQL Product
+## SQL Product
 ![alt text](./PictureOfProject/ProductSQL.png)
